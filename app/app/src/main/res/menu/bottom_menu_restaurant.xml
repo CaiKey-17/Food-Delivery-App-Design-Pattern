@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/btn_order"
+        android:icon="@drawable/color_btn_activity"
+        android:title="Đặt món" />
+
+    <item
+        android:id="@+id/btn_menu"
+        android:icon="@drawable/color_btn_menu"
+        android:title="Menu" />
+
+    <item
+        android:id="@+id/btn_mailbox"
+        android:icon="@drawable/color_btn_pay"
+        android:title="Voucher" />
+
+    <item
+        android:id="@+id/btn_setting"
+        android:icon="@drawable/color_btn_chat"
+        android:title="Cài đặt" />
+</menu>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    style="@style/SCREEN_MAIN"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Activity.DriverFavoriteLocationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/baseline_arrow_back_24" />
+
+        <!-- Title TextView -->
+        <TextView
+            android:id="@+id/textState"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Địa điểm yêu thích"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Help Button -->
+        <Button
+            android:id="@+id/helpButton"
+            android:layout_width="38dp"
+            android:layout_height="31dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/baseline_help_24" />
+
+        <Button
+            android:id="@+id/settingsButton"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/color_btn_chat" />
+    </LinearLayout>
+
+    <!-- AutoCompleteTextView để nhập tên địa điểm -->
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập địa điểm"
+        style="@style/SCREEN"
+        android:textSize="16sp"
+        android:padding="12dp" />
+
+    <!-- RecyclerView để hiển thị danh sách gợi ý địa điểm -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewSuggestions"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:listitem="@layout/item_favorite_location" />
+
+</LinearLayout>

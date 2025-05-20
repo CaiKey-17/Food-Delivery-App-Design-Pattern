@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Thêm nhóm món ăn</h2>
+<form id="colorForm" action="/groupdish/add" method="POST" enctype="multipart/form-data">
+    <label for="groupName">Tên nhóm</label>
+    <input type="text" id="groupName" name="name" required>
+
+    <label for="image">Ảnh:</label>
+    <input type="file" id="image" name="image" required>
+
+
+    <button type="submit">Thêm</button>
+</form>
+</body>
+</html>

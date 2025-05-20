@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="?android:attr/windowBackground">
+
+    <TextView
+        android:id="@+id/textDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Distance: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Duration: "
+        android:textSize="16sp" />
+
+    <!-- Thông tin nhà hàng -->
+    <TextView
+        android:id="@+id/textRestaurantName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên nhà hàng: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textRestaurantAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Địa chỉ nhà hàng: "
+        android:textSize="16sp" />
+
+    <!-- Thông tin hóa đơn -->
+    <TextView
+        android:id="@+id/textBillName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên hóa đơn: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textBillTotalPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tổng giá hóa đơn: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textBillPaymentStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tình trạng thanh toán: "
+        android:textSize="16sp" />
+
+    <!-- Thông tin khách hàng -->
+
+    <Button
+        android:id="@+id/button8"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giao hàng" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnClose"
+            style="@style/BUTTON_RED"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:layout_weight="1"
+            android:onClick="closeBottomSheet"
+            android:text="Đóng" />
+
+        <Button
+            android:id="@+id/btnResetMap"
+            style="@style/BUTTON_OK_V2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_weight="1"
+            android:onClick="resetMap"
+            android:text="Nhận đơn" />
+    </LinearLayout>
+
+</LinearLayout>

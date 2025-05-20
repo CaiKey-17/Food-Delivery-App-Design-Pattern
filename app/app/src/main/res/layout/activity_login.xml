@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+												   xmlns:app="http://schemas.android.com/apk/res-auto"
+												   xmlns:tools="http://schemas.android.com/tools"
+												   android:id="@+id/main"
+												   android:layout_width="match_parent"
+												   android:layout_height="match_parent"
+												   android:layout_marginBottom="10dp"
+												   tools:context=".Activity.Login">
+
+	<com.airbnb.lottie.LottieAnimationView
+			android:id="@+id/lottieAnimationView"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:scaleType="centerCrop"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintHorizontal_bias="1.0"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			app:layout_constraintVertical_bias="0.0"
+			app:lottie_autoPlay="true"
+			app:lottie_loop="true"
+			app:lottie_rawRes="@raw/background_login" />
+
+	<View
+			android:id="@+id/view"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:alpha="0.4"
+			android:background="#000000" />
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:alpha="1"
+			app:layout_constraintBottom_toBottomOf="@+id/lottieAnimationView"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="@+id/lottieAnimationView"
+			app:layout_constraintVertical_bias="0.45999998">
+
+		<ImageView
+				android:id="@+id/imageView"
+				android:layout_width="200dp"
+				android:layout_height="200dp"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintHorizontal_bias="0.497"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				app:srcCompat="@drawable/logo" />
+
+		<TextView
+				android:id="@+id/textView"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="-15dp"
+				android:fontFamily="sans-serif-black"
+				android:textColor="#F8F4F4"
+				android:textSize="20sp"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintHorizontal_bias="0.497"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+		<androidx.cardview.widget.CardView
+			android:id="@+id/giohang"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_marginTop="-15dp"
+			android:layout_marginBottom="-50dp"
+			android:alpha="1"
+
+			android:elevation="2dp"
+			app:cardBackgroundColor="#FFFFFF"
+			app:cardCornerRadius="40dp"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_marginTop="-15dp"
+			android:elevation="5dp"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/textView"
+			app:layout_constraintVertical_bias="0.5">
+
+			<LinearLayout
+				android:id="@+id/LinearLayout"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="15dp"
+				android:layout_marginTop="20dp"
+				android:layout_marginRight="15dp"
+				android:elevation="5dp"
+				android:orientation="vertical">
+
+				<EditText
+					android:id="@+id/username"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:layout_marginTop="10dp"
+					android:layout_marginRight="10dp"
+					android:layout_marginBottom="16dp"
+					android:background="@drawable/edittext_border"
+					android:drawableLeft="@drawable/baseline_person_24"
+					android:drawablePadding="10dp"
+					android:hint="Tên tài khoản"
+					android:padding="16dp"
+					android:singleLine="true"
+
+					android:textColor="#090000"
+					android:textColorHint="#808080"
+					android:textSize="15sp" />
+
+				<EditText
+					android:id="@+id/password"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:layout_marginTop="10dp"
+					android:layout_marginRight="10dp"
+
+					android:layout_marginBottom="16dp"
+					android:background="@drawable/edittext_border"
+					android:drawableLeft="@drawable/baseline_lock_person_24"
+					android:drawableRight="@drawable/password_show"
+					android:drawablePadding="10dp"
+					android:hint="Mật khẩu"
+					android:inputType="textPassword"
+					android:padding="16dp"
+					android:singleLine="true"
+					android:textColor="#090000"
+					android:textColorHint="#808080"
+					android:textSize="15sp" />
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:orientation="horizontal">
+
+					<CheckBox
+						android:id="@+id/checkBox"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Nhớ mật khẩu"
+						android:textColor="#846A6A"
+						android:textSize="14sp" />
+
+					<TextView
+						android:id="@+id/btn_reset"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:gravity="right"
+						android:text="Quên mật khẩu?"
+						android:textColor="#846A6A"
+						android:textSize="14sp"
+						android:textStyle="italic" />
+
+				</LinearLayout>
+
+				<Button
+					android:id="@+id/btn_login"
+					android:layout_width="match_parent"
+					android:layout_height="55dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginTop="10dp"
+					android:layout_marginRight="10dp"
+					android:backgroundTint="#3bc4ca"
+					android:text="ĐĂNG NHẬP"
+					android:textColor="#FFFFFF"
+					android:textSize="15sp"
+					android:textStyle="bold" />
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:gravity="center"
+					android:orientation="horizontal"
+					android:paddingTop="14dp"
+					android:paddingBottom="14dp">
+
+					<View
+						android:layout_width="0dp"
+						android:layout_height="1dp"
+						android:layout_marginEnd="10dp"
+						android:layout_weight="1"
+						android:background="#745A5A" />
+
+					<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_gravity="center"
+							android:text="Hoặc đăng nhập với"
+							android:textColor="#846A6A"
+							android:textSize="14dp"/>
+
+					<View
+						android:layout_width="0dp"
+						android:layout_height="1dp"
+						android:layout_marginStart="10dp"
+						android:layout_weight="1"
+						android:background="#745A5A" />
+
+				</LinearLayout>
+
+				<Button
+					android:id="@+id/button4"
+					android:layout_width="match_parent"
+					android:layout_height="55dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:layout_marginBottom="10dp"
+					android:backgroundTint="#4967D0"
+					android:drawableLeft="@drawable/facebook"
+					android:text="Đăng nhập bằng Facebook"
+					android:textAllCaps="false"
+					android:textColor="#FFFFFF"
+					android:textSize="15sp" />
+
+				<Button
+					android:id="@+id/googbleBtn"
+					android:layout_width="match_parent"
+					android:layout_height="55dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:backgroundTint="#E7DDDD"
+					android:drawableLeft="@drawable/google"
+					android:text="Đăng nhập bằng Google"
+					android:textAllCaps="false"
+					android:textColor="#000000"
+					android:textSize="15sp" />
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_marginTop="15dp"
+					android:gravity="center"
+					android:orientation="horizontal">
+
+					<TextView
+						android:id="@+id/textView5"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Bạn chưa có tài khoản?"
+						android:textColor="#846A6A"
+						android:textSize="14sp" />
+
+					<TextView
+						android:id="@+id/btn_signup"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="5dp"
+						android:text="Đăng ký"
+						android:textColor="#1C7F84"
+						android:textSize="14sp"
+						android:textStyle="bold" />
+				</LinearLayout>
+
+			</LinearLayout>
+		</ScrollView>
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,26 @@
+<!-- res/layout/fragment_driver_approval.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    style="@style/SCREEN_MAIN"
+    tools:context=".Fragment.DriverApprovalFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Danh sách tài xế yêu cầu duyệt"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        style="@style/TEXT"
+        android:fontFamily="sans-serif-medium" />
+
+    <!-- RecyclerView to display the list of drivers pending approval -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewDriverApproval"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

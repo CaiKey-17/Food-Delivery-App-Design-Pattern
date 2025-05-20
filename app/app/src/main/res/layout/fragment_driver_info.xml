@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/SCREEN_MAIN"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Avatar section -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:cardCornerRadius="100dp"
+            app:cardElevation="6dp">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageViewAvatar"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:contentDescription="Avatar"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/baseline_keyboard_arrow_right_24" />
+
+                <ImageButton
+                    android:id="@+id/imageViewEditAvatar"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="8dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="4dp"
+                    android:src="@drawable/baseline_camera_alt_24"
+                    android:contentDescription="Edit Avatar" />
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- User info section -->
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text=""
+            android:textSize="22sp"
+            android:textStyle="bold"
+            style="@style/TEXT" />
+
+        <!-- Scrollable statistics section -->
+
+        <!-- Settings section -->
+        <TextView
+            style="@style/TEXT"
+            android:id="@+id/settingsHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="16dp"
+            android:text="Cài đặt"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Setting items -->
+
+        <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingTop="12dp"
+                android:padding="12dp">
+
+
+
+            <EditText
+                    android:id="@+id/sotien"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="Nhập số tiền"
+                    android:textSize="16sp"
+                    android:inputType="number"
+                    style="@style/TEXT_V2" />
+
+            <Button
+                android:id="@+id/nap"
+                style="@style/BUTTON_OK"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:text="Nạp tiền"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/rounded_background"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp">
+
+
+
+                <TextView
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="Chế độ tối"
+                    style="@style/TEXT_V2"
+
+                    android:textSize="16sp" />
+
+                <Switch
+                    android:id="@+id/switch_driver_darkmode"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <!-- Change Password -->
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:id="@+id/changePasswordLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/rounded_background"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="Đổi mật khẩu"
+                    android:textSize="16sp"
+                    style="@style/TEXT_V2" />
+            </LinearLayout>
+
+            <!-- Notification Settings -->
+            <LinearLayout
+                android:id="@+id/notificationSettingsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:paddingTop="12dp"
+                android:background="@drawable/rounded_background"
+                android:paddingBottom="12dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="Cài đặt thông báo"
+                    android:textSize="16sp"
+                    style="@style/TEXT_V2" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Help section -->
+        <TextView
+            android:id="@+id/helpHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="16dp"
+            android:text="Trợ giúp"
+            style="@style/TEXT"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Help items -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp"
+            android:padding="16dp">
+
+            <!-- Help Center -->
+            <LinearLayout
+                android:id="@+id/helpCenterLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/rounded_background"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/baseline_help_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="Trung tâm trợ giúp"
+                    style="@style/TEXT_V2"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+
+            <!-- General Information -->
+            <LinearLayout
+                android:id="@+id/generalInfoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_background"
+                android:gravity="center_vertical"
+                android:paddingTop="12dp"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="12dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/baseline_info_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="Thông tin chung"
+                    android:textSize="16sp"
+                   style="@style/TEXT_V2"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Account buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp"
+            android:paddingLeft="16dp"
+            android:layout_marginBottom="20dp"
+            android:paddingRight="16dp">
+
+            <Button
+                android:id="@+id/logout"
+                style="@style/BUTTON_OK_V2"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:text="Đăng xuất" />
+
+            <Button
+                style="@style/BUTTON_RED"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:text="Xóa tài khoản" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

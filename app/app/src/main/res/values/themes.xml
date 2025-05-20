@@ -1,0 +1,77 @@
+<resources>
+    <!-- Base application theme for Light Mode. -->
+    <style name="Base.Theme.Project_Android" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">#6200EE</item>
+        <item name="colorPrimaryVariant">#3700B3</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="customTextColor">#000000</item>
+        <item name="customBackgroundColor">#FFFFFF</item>
+
+        <item name="background_color">#FFFFFF</item>
+        <item name="border_color">#E6E3E3</item>
+
+        <item name="background_color_v2">#E7E1E1</item>
+        <item name="border_color_v2">#CCCCCC</item>
+
+        <item name="bonus_v1">#FFDDDDDD</item>
+        <item name="bonus_v2">#FFFFFFFF</item>
+
+    </style>
+
+    <style name="TEXT">
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="TEXT_ITEM">
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="TEXT_V2">
+        <item name="android:textColor">#828080</item>
+    </style>
+
+    <style name="SCREEN">
+        <item name="android:background">#FFFFFF</item>
+    </style>
+
+    <style name="SCREEN_MAIN">
+        <item name="android:background">#FFFFFF</item>
+    </style>
+
+    <style name="CARDVIEW">
+        <item name="cardBackgroundColor">#F6F6F6</item>
+    </style>
+
+    <style name="CARDVIEW_V2">
+        <item name="cardBackgroundColor">#FFFFFF</item>
+    </style>
+
+    <style name="SCREEN_V2">
+        <item name="android:background">#FFFFFF</item>
+    </style>
+
+    <style name="VIEW">
+        <item name="android:background">#F1EDED</item>
+    </style>
+
+    <style name="VIEW_V2">
+        <item name="android:background">#EFE9E9</item>
+    </style>
+
+    <style name="BUTTON_OK">
+        <item name="android:backgroundTint">#109EA5</item>
+        <item name="android:textColor">#2A2929</item>
+    </style>
+
+    <style name="BUTTON_OK_V2">
+        <item name="android:backgroundTint">#109EA5</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="BUTTON_RED">
+        <item name="android:backgroundTint">#E22929</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="Theme.Project_Android" parent="Base.Theme.Project_Android" />
+</resources>

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "547685286030",
+    "firebase_url": "https://testmap123123-df553-default-rtdb.firebaseio.com",
+    "project_id": "testmap123123-df553",
+    "storage_bucket": "testmap123123-df553.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:547685286030:android:d2edba2ba12363dd20c9df",
+        "android_client_info": {
+          "package_name": "com.example.project_android"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgFcnCvdbT6JOTD_GYifnCucbL8mcQbis"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

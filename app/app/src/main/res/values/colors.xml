@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="chudao">#3bc4ca</color>
+    <color name="mauchu">#03898F</color>
+    <color name="nenDriver">#FCEFEEEE</color>
+    <color name="purple_500">#491286</color>
+    <color name="selected_tab_color">#FF5722</color>
+    <color name="unselected_tab_color">#808080</color>
+    <color name="teal_700">#FF018786</color>
+
+</resources>

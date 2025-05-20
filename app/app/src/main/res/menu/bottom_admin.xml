@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/itDriver"
+        android:icon="@drawable/color_btn_home"
+        android:title="Chi tiết" />
+
+<!--    <item-->
+<!--        android:id="@+id/itRestaurant"-->
+<!--        android:icon="@drawable/baseline_diamond_24"-->
+<!--        android:title="Quán ăn" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/itVoucher"-->
+<!--        android:icon="@drawable/baseline_diamond_24"-->
+<!--        android:title="Voucher" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/itComplaint"-->
+<!--        android:icon="@drawable/baseline_diamond_24"-->
+<!--        android:title="Khiếu nại" />-->
+
+    <item
+        android:id="@+id/itSetting"
+        android:icon="@drawable/color_btn_chat"
+        android:title="Cài đặt" />
+</menu>

@@ -1,0 +1,15 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="rectangle">
+
+    <corners android:radius="0dp"/> <!-- Bo tròn góc -->
+
+    <solid android:color="#9FFFFFFF"/> <!-- Màu nền cho Button -->
+
+
+    <padding
+            android:left="16dp"
+            android:right="16dp"
+            android:top="10dp"
+            android:bottom="10dp"/> <!-- Khoảng cách padding -->
+
+</shape>
